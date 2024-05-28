@@ -1,18 +1,26 @@
 [
-	{
-		"url": "/",
-		"title": "About Me"
-	},
-	{
-		"url": "/case-studies",
-		"title": "Case Studies"
-	},
-	{
-		"url": "/articles",
-		"title": "Articles"
-	},
-	{
-		"url": "/projects",
-		"title": "Projects"
-	}
+  {
+    "url": "/about",
+    "title": "About"
+  },
+  {
+    "url": "/studies",
+    "title": "Studies"
+  },
+  {
+    "url": "/publications",
+    "title": "Publications"
+  },
+  {
+    "url": "/activity",
+    "title": "Activity"
+  },
+  {
+    "url": "/contact",
+    "title": "Contact"
+  },
+  {
+    "url": "/articles",
+    "title": "Articles"
+  }
 ]
