@@ -1,5 +1,7 @@
 // Core packages
 import Image from 'next/image'
+import Col from 'react-bootstrap/Col'; 
+import Row from 'react-bootstrap/Row'; 
 
 // Section structure
 import Section from '../../structure/section';
@@ -24,35 +26,43 @@ import about from '../../../styles/sections/index/about.module.scss';
  * @returns {jsx} <About />
  */
 export default function About() {
+	const SubRow = ((itm1, itm2) => (
+		<Row> 
+			<Col>{item1}</Col> 
+			<Col>{itm2}</Col> 
+		</Row>
+	))
+
 	return (
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Me"
-					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					title="Asllan Zaimi"
+					preTitle="Researcher of naval sciences, ancient culture and the universe"
+					subTitle="The author of 17 scientific and academic books, over 30 studies and 13 scientific articles for planet Earth and the universe, The author was born on March 12, 1948 in Dobrushë, Skrapar district."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/author/AuthorPicture5.jpg" alt="Asllan Zaimi"/>
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 
-							title="Softskills that pay the bills"
+							title="Completed his university studies"
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							copy="In 1980, he completed his university studies in science politics and graduated in philosophy and again took excellent results (Gold Medal).
+							He speaks several foreign languages. Speaks and writes English fluently, also speaks good Italian and sufficient Russian (spoken and written)."
 						/>
 						<BadgesBlock 
-							title="Reasearch and planning" 
+							title="Mechanical Engineering" 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="During the years 1971-1972 he studied Mechanical Engineering, again with excellent results, but by order of high authorities from the party of the former communist regime, was arbitrarily denied the right to further studies in this branch."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
