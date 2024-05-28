@@ -35,10 +35,10 @@ export default function Icon({ icon }) {
 
 	const [ iconType, iconKey ] = icon
 
-	const [ stateIconKey, setIconKey ] = useState('circle-notch')
+	const [ stateIconKey, setIconKey ] = useState('medium')
 
 	useEffect( () => setIconKey( iconKey ), [ iconKey ] )
-
+	
 	return (
 		<FontAwesomeIcon icon={[ iconType, stateIconKey ]} />
 	)
